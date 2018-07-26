@@ -32,7 +32,7 @@ myTree.nodes = [new PTNode('R',-1),new PTNode('A',0),new PTNode('B',0),new PTNod
 function translate2CSTree(Tree, current) {
     let sonNode = '',broNode = '';
 
-
+    // Find the first child node and the sibling node
     for (let i = Tree.size-1; i >= 0; i --) {
         if (i - 1 >= 0 && Tree.nodes[i].parent === current.parent &&
             Tree.nodes[i-1].value === current.value) {
